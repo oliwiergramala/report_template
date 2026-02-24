@@ -2,59 +2,47 @@
 % Include packages for article 
 \input{packages}
 
-\setlength{\headheight}{14pt}  
+\setlength{\headheight}{15pt}  
 \pagestyle{fancy}       
-
-\fancyhead[L]{\theauthor}
-\fancyhead[C]{\thetitle}
-\fancyhead[R]{\today}
-
-\graphicspath{{images/}}
-
-
 % Macro for creating figure with graphic and caption 
 \newcommand{\image}[2]{
   \begin{figure}[h!]
         \begin{center}
-            \includegraphics{#1}
+		\includegraphics[width=0.5\textwidth]{#1}
             \caption{#2}
         \end{center}
     \end{figure}
 }
 
-\newcommand{\city}{Babel}
-%=========================================
-\title{Template title}
-\newcommand{\subtitle}{Template subtitle}
-\author{Krzysztof Krawczyk}
+% Here are some macros for 'variables' such as like title etc.
+\newcommand{\thetitle}{Ratowanie świata}
+\newcommand{\subtitle}{Sprawozdanie numer 1}
+\newcommand{\theauthor}{Krzysztof Krawczyk}
+\newcommand{\theprofesor}{mgr. inż. Doom Guy}
+\newcommand{\thesubject}{Zabijanie demonów}
+\newcommand{\thespec}{Inżynieria demonów}
+
+% Path for images 
+\graphicspath{ {./images/} }
+
+\fancyhead[L]{\theauthor}
+\fancyhead[C]{\thetitle}
+\fancyhead[R]{\today}
 
 \begin{document}
 
-%title page
+%Title page
 \input{header}
 
 %Contents page
 \tableofcontents
-\newpage
 
-\section{Abstract}
-\section{First section}
-Itemize
-\begin{itemize}
-    \item First item 
-    \item Second item
-\end{itemize}
-
-\subsection{First Subsection}
-\subsubsection{Subsubsection}
-\newpage
-
-\section{Second section}
-   \image{logo.png}{Przykład użycia makro}
-
-\newpage
+\section{Wstęp}
 %Create list of figures
+\newpage
 \listoffigures
+
 %Create list of tables 
+\newpage
 \listoftables
 \end{document}
