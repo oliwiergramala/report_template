@@ -1,10 +1,10 @@
 \documentclass[12pt]{article}
-% Include packages for article 
+% Include packages used in the document
 \input{packages}
 
 \setlength{\headheight}{15pt}  
 \pagestyle{fancy}       
-% Macro for creating figure with graphic and caption 
+% Macro for creating a figure with an image and caption
 \newcommand{\image}[2]{
   \begin{figure}[h!]
         \begin{center}
@@ -14,7 +14,7 @@
     \end{figure}
 }
 
-% Here are some macros for 'variables' such as like title etc.
+% Macros storing document metadata (title, author, etc.)
 \newcommand{\thetitle}{Ratowanie świata}
 \newcommand{\subtitle}{Sprawozdanie numer 1}
 \newcommand{\theauthor}{Krzysztof Krawczyk}
@@ -22,7 +22,7 @@
 \newcommand{\thesubject}{Zabijanie demonów}
 \newcommand{\thespec}{Inżynieria demonów}
 
-% Path for images 
+% Path to the images directory
 \graphicspath{ {./images/} }
 
 \fancyhead[L]{\theauthor}
@@ -31,18 +31,20 @@
 
 \begin{document}
 
-%Title page
+% Title page
 \input{header}
 
-%Contents page
+% Table of contents
 \tableofcontents
 
-\section{Wstęp}
-%Create list of figures
+\section{Introduction}
+
+% List of figures
 \newpage
 \listoffigures
 
-%Create list of tables 
+% List of tables
 \newpage
 \listoftables
+
 \end{document}
