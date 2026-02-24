@@ -1,4 +1,4 @@
-### LaTeX University Report Template
+# LaTeX University Report Template
 
 This repository is a LaTeX template created for writing university reports at the University of Technology in Koszalin.
 However, it can be easily adapted for use at any university.
@@ -16,7 +16,7 @@ The repository contains the following files and directories:
 
 ## File Descriptions
 
-**main.tex**
+### main.tex
 
 This is the main document file.
 All other files are imported here.
@@ -29,15 +29,14 @@ It contains:
 
 This is the only file you typically modify when writing a report.
 
-**header.tex**
+### header.tex
 
 This file defines the title page.
-
 Its content depends on variables defined in main.tex, such as:
 
-\thetitle
-\theauthor
-\thedate
+- `\thetitle`
+- `\theauthor`
+- `\thedate`
 
 The key advantage of this approach is reusability.
 
@@ -48,15 +47,15 @@ You can:
 
 There is no need to modify header.tex when creating a new report — only update the variables in the main document.
 
-**packages.tex**
+### packages.tex
 
 This file contains all required LaTeX packages for building the project.
 
-**images/ Directory**
+### images/ Directory
 
 All images used in the document should be placed inside the images/ directory.
 
-### Custom Image Macro
+## Custom Image Macro
 
 A simple macro was created to make inserting images easier:
 
@@ -72,7 +71,7 @@ This will:
 - Add an automatically numbered caption
 - Keep consistent formatting throughout the document
 
-### How to Use
+## How to Use
 
 1. Clone the repository
 2. Open main.tex
