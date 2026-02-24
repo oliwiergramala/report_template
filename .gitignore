@@ -1,0 +1,8 @@
+*
+!.gitignore
+!main.tex
+!header.tex
+!packages.tex
+!LICENSE
+!README.md
+!example/**
