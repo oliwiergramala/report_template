@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+% Include packages for article 
+\input{packages}
+
+\setlength{\headheight}{14pt}  
+\pagestyle{fancy}       
+
+\fancyhead[L]{\theauthor}
+\fancyhead[C]{\thetitle}
+\fancyhead[R]{\today}
+
+\graphicspath{{images/}}
+
+
+% Macro for creating figure with graphic and caption 
+\newcommand{\image}[2]{
+  \begin{figure}[h!]
+        \begin{center}
+            \includegraphics{#1}
+            \caption{#2}
+        \end{center}
+    \end{figure}
+}
+
+\newcommand{\city}{Babel}
+%=========================================
+\title{Template title}
+\newcommand{\subtitle}{Template subtitle}
+\author{Krzysztof Krawczyk}
+
+\begin{document}
+
+%title page
+\input{header}
+
+%Contents page
+\tableofcontents
+\newpage
+
+\section{Abstract}
+\section{First section}
+Itemize
+\begin{itemize}
+    \item First item 
+    \item Second item
+\end{itemize}
+
+\subsection{First Subsection}
+\subsubsection{Subsubsection}
+\newpage
+
+\section{Second section}
+   \image{logo.png}{Przykład użycia makro}
+
+\newpage
+%Create list of figures
+\listoffigures
+%Create list of tables 
+\listoftables
+\end{document}
